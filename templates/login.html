@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-{#{% load static %}#}
-{#{{ url_for('static', filename = 'assets/plugins/bootstrap/css/bootstrap.min.css') }}#}
-{#{{ url_for('static', filename = 'assets/plugins/bootstrap/css/bootstrap.min.css') }}#}
-{#{{ url_for('static', filename = 'assets/plugins/fontawesome/css/fontawesome.min.css') }}#}
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Toy Task</title>
-{#<!--    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">-->#}
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap">
-{#    <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">#}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'assets/plugins/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'assets/plugins/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'assets/plugins/fontawesome/css/fontawesome.min.css') }}">
@@ -29,7 +23,7 @@
                 <div class="login-right">
                     <div class="login-right-wrap">
                         <h1>Toy task</h1>
-                        <p class="account-subtitle">Basic Ciper 10 dataset Testing </p>
+                        <p class="account-subtitle">Login Using Authorized Signatures  </p>
                         {% if messages %}
                         {% for message in messages %}
                         {% if message.tags == 'error' %}
@@ -61,9 +55,7 @@
     </div>
 </div>
 </div>
-{#<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>#}
-{#<script src="{% static 'assets/js/popper.min.js' %}"></script>#}
-{#<script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>#}
+
 <script src="{{ url_for('static', filename = 'assets/js/script.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
