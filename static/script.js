@@ -11,7 +11,8 @@ $("form[name=signup_form]").submit(function (e){
             console.log(resp);
         },
         error:function(resp){
-            console.log(resp[]);
+            console.log(resp);
     }
-    })
-})
+    });
+    e.preventDefault();
+});
